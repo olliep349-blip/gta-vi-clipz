@@ -1,0 +1,26 @@
+:root{--bg:#0d0920;--panel:#1a1335;--ink:#f4f0ff;--muted:#b9b0d6;--pink:#ff3ea5;--cyan:#22d3ee;--sun:#ffc857}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+a{color:var(--cyan)}a:hover{color:var(--sun)}
+header{background:linear-gradient(180deg,#2a1150,#0d0920);border-bottom:1px solid #2c2257}
+.wrap{max-width:920px;margin:0 auto;padding:0 16px}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:800;letter-spacing:.3px}
+.brand img{width:40px;height:40px;border-radius:9px}
+nav{display:flex;gap:16px;flex-wrap:wrap;font-size:.95rem}nav a{color:var(--muted);text-decoration:none}nav a:hover,nav a[aria-current]{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:center;padding:40px 0 48px}
+.hero img{width:100%;max-width:320px;border-radius:28px;box-shadow:0 20px 60px #ff3ea540;justify-self:center}
+h1{font-size:2.1rem;line-height:1.2;margin:.2em 0}h2{font-size:1.35rem;margin-top:1.8em}h3{font-size:1.05rem;margin:1.2em 0 .3em}
+.lead{font-size:1.1rem;color:var(--muted)}
+.btn{display:inline-block;background:var(--pink);color:#fff;text-decoration:none;font-weight:700;padding:10px 18px;border-radius:999px;margin:6px 8px 0 0}
+.btn.alt{background:transparent;border:1px solid var(--cyan);color:var(--cyan)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0}
+.card{background:var(--panel);border:1px solid #2c2257;border-radius:14px;padding:16px}
+.card b{display:block;margin-bottom:4px}
+ol.steps li{margin:.5em 0}
+main{padding:8px 0 48px}main.doc{max-width:760px}
+.doc p,.doc li{color:#e6e0fa}
+table{border-collapse:collapse;width:100%;margin:10px 0}td,th{border:1px solid #2c2257;padding:8px;text-align:left;vertical-align:top}th{background:var(--panel)}
+footer{border-top:1px solid #2c2257;color:var(--muted);font-size:.9rem;padding:22px 0 40px}
+footer .links{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+@media (max-width:720px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr}h1{font-size:1.7rem}}

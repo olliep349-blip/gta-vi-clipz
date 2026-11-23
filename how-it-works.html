@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How it works: GTA VI CLIPZ Poster</title>
+<meta name="description" content="GTA VI CLIPZ Poster: publishes GTA VI CLIPZ short gameplay clips to TikTok and other platforms.">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="stylesheet" href="style.css">
+</head><body>
+<header><div class="wrap bar"><a class="brand" href="index.html"><img src="icon-512.png" alt="GTA VI CLIPZ Poster icon">GTA VI CLIPZ Poster</a><nav><a href="index.html">Home</a><a href="how-it-works.html" aria-current=page>How it works</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
+<main class="wrap">
+
+<h1>How it works</h1>
+<p class="lead">From a livestream moment to a published TikTok in four steps. The steps that involve TikTok are described exactly as they appear in the tool.</p>
+<h2>1. Find and edit</h2>
+<p>New GTA 6 stream moments are collected from creators whose clipping programmes allow it. Each moment is edited into a 9:16 vertical video (1080×1920, 60 fps) with captions, the creator's name and our watermark. The finished video and its caption sit on the operator's own computer, ready for review.</p>
+<h2>2. Connect TikTok (Login Kit)</h2>
+<ol class="steps">
+<li>The operator clicks <b>Connect TikTok</b> in the tool.</li>
+<li>TikTok's own authorisation page opens. TikTok shows which permissions are requested: <code>user.info.basic</code>, <code>video.upload</code> and <code>video.publish</code>.</li>
+<li>After the operator approves, TikTok returns to the tool, which stores the access token on the operator's computer only.</li>
+<li>The tool calls the user info endpoint (<code>user.info.basic</code>) and shows the connected account's display name and avatar.</li>
+</ol>
+<h2>3. Review and post settings</h2>
+<p>Before each post, the tool shows a review screen that follows TikTok's Content Sharing Guidelines:</p>
+<ul>
+<li>A preview of the video and the account (nickname and avatar) it will be posted to.</li>
+<li>An editable caption with the creator credit and hashtags.</li>
+<li><b>Who can view this video</b>: chosen by the operator from the privacy options TikTok returns for the account. There is no preselected default.</li>
+<li>Allow comments, Duet and Stitch toggles. Options the account has disabled in TikTok are shown as unavailable.</li>
+<li>Commercial content disclosure (<i>Your brand</i> / <i>Branded content</i>) when a clip is part of a paid promotion, with the matching TikTok policy notice.</li>
+<li>The notice <i>"By posting, you agree to TikTok's Music Usage Confirmation"</i>.</li>
+</ul>
+<h2>4. Publish (Content Posting API)</h2>
+<ul>
+<li><b>Direct Post</b> (<code>video.publish</code>): the video file is uploaded to TikTok and posted to the profile with the chosen settings. The tool tells the operator that processing can take a few minutes, then checks the publish status and shows the link when the post is live.</li>
+<li><b>Upload as draft</b> (<code>video.upload</code>): the video is sent to the TikTok inbox, and the operator finishes and posts it in the TikTok app.</li>
+</ul>
+<h2>What the tool never does</h2>
+<ul><li>It never posts without the settings above being set for that post.</li><li>It never accesses other TikTok users' data, followers, messages or analytics.</li><li>It never sells or shares data. See the <a href="privacy.html">Privacy Policy</a>.</li></ul>
+
+</main>
+<footer><div class="wrap"><div class="links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="contact.html">Contact</a><a href="https://github.com/olliep349-blip/gta-vi-clipz">Source of this site</a></div>
+<p>GTA VI CLIPZ Poster is an independent fan project. It is not affiliated with, endorsed by or sponsored by Rockstar Games, Take-Two Interactive, TikTok, Google/YouTube or Meta. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. Streamers shown in clips are credited in every post.</p>
+<p>© 2026 GTA VI CLIPZ</p></div></footer>
+</body></html>
